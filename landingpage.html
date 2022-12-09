@@ -19,26 +19,16 @@
   </header>
 	<body>
 	  <main>  
-        <div class="container">
-            <form>
-                <h3 style="padding-top:0.5em;">Login</h3>
-                <div class="login">
-                    <input type="text" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>E-Mail</label>
-                </div>
-
-                <div class="login">
-                    <input type="password" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Passwort</label>
-                </div>
+        <div class="loginContainer">
+            <form class="login">
+              <p id="loginText">Email</p>
+              <input type="email" name="email" required>
+              <p id="loginText"">Passwort</p>
+              <input type="password" name="email" required>
             </form>
-            <button type="submit" name="submit"class="button">Anmelden</button>
+            <p class="text" style="text-align: center;">Sie haben kein Konto? <a class="bold"href="register.php">Registrierung</a></p>
         </div>
-        </main>
+      </main>
 	</body>
   <footer>
   </footer>

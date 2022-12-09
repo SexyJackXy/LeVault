@@ -1,14 +1,15 @@
-:root{
+html{
     padding: 0;
     margin: 0;
     font-size: 2ch;
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
-    color: #f5f6fa;
+    color: black  ;
+    background-color:black;
 }
 
 body{
     margin: 0em;
-    background-color: #f5f6fa;
+    background-color: #1b1d1e ;
     display: grid;
 }
   
@@ -24,16 +25,15 @@ header{
 
 input {
     font-size:18px;
-    padding:10px 10px 10px 5px;
     display:block;
+    padding: 0;
+    margin-bottom: 0.5em;
     width:99%;
     border:none;
     border-bottom:1px solid #f06292;
-    background-color: #fafafa ;
 }
 
 form{
-    background-color: #fafafa ;
     display: grid;
     justify-content: center;
     width: 100%;
@@ -73,11 +73,18 @@ input:focus ~ .highlight {
 }
 
 .login{ 
-    /*width: 100%;*/
+    text-align: left;
     position:relative; 
     margin-bottom:45px; 
     padding: 0.5em;
     background-color: #fafafa ;
+}
+
+#loginText{
+    padding-top: 0.75em;
+    margin: 0;
+    font-weight: 600;
+    color: #d81b60;
 }
 
 .bar { 
@@ -144,10 +151,11 @@ input:focus ~ .highlight {
     width: 99%;
 }
 
-.container{
+.loginContainer{
     display: grid;
     justify-content: center;
     width: 30%;
+    margin: 0 auto;
     text-align: center;
     border: solid 1px #212121;
     border-radius: 1em;
