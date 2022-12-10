@@ -4,7 +4,7 @@ html{
     font-size: 2ch;
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
     color: black  ;
-    background-color:black;
+    background-color:white;
 }
 
 body{
@@ -30,6 +30,7 @@ input {
     margin-bottom: 0.5em;
     width:99%;
     border:none;
+    background-color: #fafafa ;
     border-bottom:1px solid #f06292;
 }
 
