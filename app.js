@@ -31,12 +31,11 @@ app.use(express.static(publicDir));
 
 app.set('view engine', 'hbs');
 
-//darstellen von dem views Orderner
-app.get("/", (req, res) => {
-    res.render("index")
-});
+//Define Routes
+app.use('/',require('./scripts/pages'));
+app.use('/login', require('./scripts/login'));
 
-//Startet den Webserver
+//Startet den Webserver auf spezifischen Port
 app.listen(5000, () =>{
     console.log("Server started ...")
-})
+});

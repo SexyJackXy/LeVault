@@ -1,2 +1,0 @@
-# LeVault
- Online Password Safe

@@ -21,14 +21,14 @@
 	<body>
 	  <main>  
         <div class="loginContainer">
-            <form class="login" name="login">
+            <form class="login" name="login" action="/auth/login" method="POST">
               <p id="loginText">Email</p>
               <input id="emailInput" type="email" name="email" required>
               <p id="loginText">Passwort</p>
               <input id="passwordInput" type="password" name="password" required>
             </form>
-            <button type="submit" name="submit"class="button" style="margin-bottom:1em;" onclick="#">Anmelden</button>
-            <p class="text" style="text-align: center;">Sie haben kein Konto? <a class="bold"href="#">Registrierung</a></p>
+            <button type="submit" name="submit"class="button" style="margin-bottom:1em;">Anmelden</button>
+            <p class="text" style="text-align: center;">Sie haben kein Konto? <a class="bold" href="#">Registrierung</a></p>
         </div>
       </main>
 	</body>
