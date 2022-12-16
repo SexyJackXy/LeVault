@@ -1,6 +1,5 @@
 //import { createConnection } from 'mysql';
-
-dotenv.config({path:'./.env'})  
+const mysql = require('mysql');
 
 var con = createConnection({
     host: ' mydb',         //liest die nahmen aus der .env datei aus
@@ -10,9 +9,19 @@ var con = createConnection({
 })
 
 function registerFunction(){
-    var name = document.getElementById('nameInput');
-    var email = document.getElementById('emailInput');
-    var password = document.getElementById('passwordInput');
+    var name = document.getElementById('nameInput').value;
+    var email = document.getElementById('emailInput').value;
+    var password = document.getElementById('passwordInput').value;
 
+    if (!name) {
+        name = "null";
+    }
+    if (!email) {
+        email = "null";
+    }
+    if (!password) {
+        password = "null";
+    }
+    
     console.log(name , email, password);
 }

@@ -24,16 +24,16 @@ app.get('/',(req,res) =>{
     res.render('index');
 })
 
-app.get('/login',(req,res) =>{
-    res.render('login');
+app.get('/login.html',(req,res) =>{
+    res.render('../html/login.html');
 })
 
-app.get('/register',(req,res) =>{
-    res.render('register');
+app.get('/register.html',(req,res) =>{
+    res.render('../html/register.html');
 })
 
-app.get('/test',(req,res) =>{
-    res.render('test');
+app.get('/test.html',(req,res) =>{
+    res.render('../html/test.html');
 })
 
 app.get('../scripts/client.js"',(req, res) =>{
