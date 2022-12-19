@@ -3,8 +3,7 @@ const express =  require('express');
 const es6  = require('express-es6-template-engine');
 const path = require('path');    
 const app = express();
-
-
+var mysql = require('mysql');
 
 //Implementierung von CSS
 const cssDir = path.join(__dirname, './files/css/');
