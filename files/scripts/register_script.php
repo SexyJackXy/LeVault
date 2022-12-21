@@ -1,5 +1,3 @@
-
-
 <?php
     include("../html/header.html");
     
@@ -40,5 +38,24 @@
     else{
         $mSQL = "INSERT INTO $mDatenbank.users (`email`,`password`,`username`) VALUES ('$email', '$hash_passwort','$username');";                        
         $db_erg = mysqli_query($dbVerbindung, $mSQL); 
+        ?>
+         	<body>
+	  <main>  
+        <div class="loginContainer">
+            <form class="login" name="login" action="../scripts/register_script.php" method="POST">
+              <p id="loginText">Email</p>
+              <input id="emailInput" type="email" name="email" required>
+              <p id="loginText">Passwort</p>
+              <input id="passwordInput" type="password" name="password" required>
+            </form>
+            <button type="submit" name="submit"class="button" style="margin-bottom:1em;">Anmelden</button>
+            <p class="text" style="text-align: center;">Sie haben kein Konto? <a class="bold" href="../html/register.php">Registrierung</a></p>
+        </div>
+      </main>
+	</body>
+  <footer>
+  </footer>
+</html>
+        <?php
     }
 ?>

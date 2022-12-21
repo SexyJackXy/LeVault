@@ -27,8 +27,8 @@ app.get('/login.html',(req,res) =>{
     res.render('../html/login.html');
 })
 
-app.get('/register.html',(req,res) =>{
-    res.render('../html/register.html');
+app.get('/register.php',(req,res) =>{
+    res.render('../html/register.php');
 })
 
 app.get('/test.html',(req,res) =>{
