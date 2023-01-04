@@ -1,0 +1,124 @@
+html{
+    padding: 0;
+    margin: 0;
+    font-size: 2ch;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    color: black  ;
+    background-color:white;
+}
+
+body{
+    margin: 0em;
+    background-color: #1b1d1e ;
+    display: grid;
+}
+  
+header{
+    display: grid;
+    height: fit-content;
+    justify-self: start;
+    width: 100%;
+    background-color: #d81b60 ;
+    margin-bottom: 2em;
+    box-shadow:0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+}
+
+input{
+    font-size: 18px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left:  1em;
+    border: none;
+    vertical-align: top;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.75em;
+}
+
+input[type="text"]::placeholder {
+    font-size: 2ch;
+    color: white;
+}
+
+input[type="text"]:focus{
+    border: none;
+    outline:0.125em solid #f06292; 
+    background-color: #880e4f;
+}
+  
+
+.headline{
+    color: #f5f6fa;
+}
+
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 90%;
+}
+
+.button{
+    background-color: #c2185b ;
+    border: 0.125em solid #880e4f ;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    color: #f5f6fa;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0;
+    outline: none;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+.button:hover{
+    animation: pulse 2s infinite;
+}
+
+.navbar{
+    margin: 0 auto;
+    padding: 0 auto;
+    justify-content: space-evenly;
+    width: 99%;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.6);
+    }
+  }
+@keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 0 0 rgba(0,0,0, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 0 10px rgba(0,0,0, 0);
+    }
+    100% {
+        -moz-box-shadow:  0 0 0 0 rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 0 0 rgba(0,0,0, 0);
+    }
+  }
+@-webkit-keyframes inputHighlighter {
+    from { background:#f06292 ; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#f06292 ; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#f06292 ; }
+  to 	{ width:0; background:transparent; }
+}
